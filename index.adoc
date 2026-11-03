@@ -1701,10 +1701,14 @@ As a *dynamic view* of the SAM image, a `LegacySam` is updated after every succe
 | Name       | `LegacySamSelectionExtension`
 | Kind       | Interface
 | Namespace  | `calypso.crypto.legacysam.sam`
-| Extends    | `CardSelectionExtension` (<<ref_cna_tr,CNA-TR-API>>)
+| Extends    | `BasicCardSelectionExtension` (<<ref_cna_tr,CNA-TR-API>>)
 | Since      | 0.3
 | Purpose    | Enriches the <<ref_cna_tr,CNA-TR-API>> selection scenario with SAM-specific commands (Unlock, Read Parameters, etc.). An instance is obtained via <<op_LegacySamApiFactory_createLegacySamSelectionExtension,`LegacySamApiFactory.createLegacySamSelectionExtension`>>.
 |===
+
+Being a `BasicCardSelectionExtension`, it is paired with a `BasicCardSelector` by the
+`prepareBasicSelectionCase` operation of the single-channel selection managers of the
+<<ref_cna_tr,CNA-TR-API>>: a legacy SAM is selected on its power-on data.
 
 If the SAM is *locked*, three mutually exclusive unlocking strategies are offered:
 

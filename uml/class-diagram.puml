@@ -238,7 +238,7 @@ package "transaction" as transaction {
     }
 }
 package "sam" as sam {
-    interface "«<back:yellow>CardSelectionExtension</back>»\nLegacySamSelectionExtension" as LegacySamSelectionExtension <<blue>> {
+    interface "«<back:yellow>BasicCardSelectionExtension</back>»\nLegacySamSelectionExtension" as LegacySamSelectionExtension <<blue>> {
         +setUnlockData(unlockData: String) → Self
         +<color:blue>setUnlockDataForProductType(unlockData: String, productType: LegacySamProductType) → Self
 
