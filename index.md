@@ -6,6 +6,18 @@ doc_name: "Terminal Calypso Crypto Legacy SAM API"
 latest_stable: "2.0.0"
 latest_stable_path: "latest-stable/"
 versions:
+  - version: "2.0.0-SNAPSHOT"
+    status: snapshot
+    files:
+      diagram:
+        name: "261028-SP-CNATerminalAPI-CalypsoCryptoLegacySAM_v2.0.0-SNAPSHOT-class-diagram.svg"
+        size: "145 kB"
+      html:
+        name: "261028-SP-CNATerminalAPI-CalypsoCryptoLegacySAM_v2.0.0-SNAPSHOT.html"
+        size: "1.7 MB"
+      pdf:
+        name: "261028-SP-CNATerminalAPI-CalypsoCryptoLegacySAM_v2.0.0-SNAPSHOT.pdf"
+        size: "2.7 MB"
   - version: "2.0.0"
     status: stable
     files:
